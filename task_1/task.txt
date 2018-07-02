@@ -27,6 +27,7 @@ Pay your attention that there are only two fields in this structure:
 	Vector3 linear
 	Vector3 angular
 And each of them have three own fields (x,y,z)
+	For moving only coordinates linear.x and angular.z are used. Other coordinates are dropped.
 
 5) To spawn new turtle you have to call service /spawn
 (with [x, y, theta, name] parameters)
