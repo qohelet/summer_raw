@@ -1,0 +1,38 @@
+Task:
+A turtle should move to another turtle
+
+Definition:
+The task is pretty the same as a previous one.
+There are two objects (two turtles). Your task is to make one turtle move to
+another. For solving this task you have to know following notes:
+1) Simulation is provided by turtlesim
+	rosrun turtlesim turtlesim_node
+
+2) In turtlesim there have to be two turtles with names:
+	turtle1
+	victim
+And victim should move to turtle1
+
+3) Poses of turtle1 victim could be read from topics /turtle1/pose and
+/victim/pose. Structure of messages from these topics you could see typing 
+in terminal:
+	rosmsg show turtlesim/Pose
+This could be imported to python code with:
+	from turtlesim.msg import Pose
+
+4) Command messages should be published in topic /victim/cmd_vel. Structure of
+messages from this topic you could see typing in terminal:
+	rosmsg show geometry_msgs/Twist
+Pay your attention that there are only two fields in this structure:
+	Vector3 linear
+	Vector3 angular
+And each of them have three own fields (x,y,z)
+
+5) To spawn new turtle you have to call service /spawn
+(with [x, y, theta, name] parameters)
+You could do it in two ways:
+a) In python by spawn_func = rospy.ServiceProxy("/spawn",Spawn)
+                spawn_func(x,y,theta,"<name>")
+   Don't forget to imoprt
+                from turtlesim.srv import Spawn
+b) in terminal call rosservice call /spawn x y theta "<name>"
