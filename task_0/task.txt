@@ -6,6 +6,6 @@ The object has position on a 2D plate: coordinates (x,y) and
 orientation angle (theta).
 A final point has 2D coordinates (x,y)
 
-The object could move forward and rotate (could not move sideways).
-The task is to send command to the object to go forward and rotate to become
-closer to final point.
+The object should move forward and rotate (should not move sideways).
+The task is to send command to the object for going forward and rotating to become
+closer to the final point.
