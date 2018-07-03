@@ -1,0 +1,19 @@
+Task:
+1) To create an application, that draws a word "hello" with turtles.
+2) Create a launch file for it
+
+Definition:
+Every node should spawn new turtle that will come on a screen and mark a letter
+(one node for letter 'h', one for 'e', one for 'l' and one for 'o')
+
+For solving this task you have to know following notes:
+Two numbers that are provided to /turtle1/cmd_vel (linear.x and angular.z)
+presents a number of how much turtle should go forward and how much does it 
+rotate. For example during following code:
+
+rospy.Publisher("/turtle1/cmd_vel",
+                geometry_msgs.msg.Twist,
+                queue_size=10).publish(Twist(linear =Vector3(x=3),
+                                             angular=Vector3(z=5)))
+
+turtle1 goes forward on 3 cells and rotates on 5 radians
