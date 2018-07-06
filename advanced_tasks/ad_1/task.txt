@@ -1,0 +1,5 @@
+Common task: To draw a mooving point in rviz
+
+subtasks:
+* run rviz http://wiki.ros.org/rviz
+* use tutorials http://wiki.ros.org/rviz/Tutorials/Markers%3A%20Basic%20Shapes and http://wiki.ros.org/rviz/Tutorials/Markers%3A%20Points%20and%20Lines to create a node in python that draws a mooving point in rviz (you can choose any trajectory: cirlce, line, spiral etc)
