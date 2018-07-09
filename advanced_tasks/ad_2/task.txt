@@ -1,6 +1,0 @@
-Simple formulation, somplicated implementation:
-
-using previous code implement the point that follows another point. You should move one point using a keyboard (you can use turtle_teleop_key), and another point should follow the first one. 
-
-Add difficulty:
-* Once one point reaches another it changes color and on a place of meeting the new point appears
