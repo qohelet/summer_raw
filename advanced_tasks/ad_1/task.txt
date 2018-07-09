@@ -1,8 +1,9 @@
-Common task: To draw a mooving point in rviz
+Common task: Create a publisher & subscriber that communicate using custom message. Message may contain any data that you prefer. Built-in types of fields in messages are defined here http://wiki.ros.org/msg
 
 subtasks:
-* run rviz http://wiki.ros.org/rviz
-* use tutorials http://wiki.ros.org/rviz/Tutorials/Markers%3A%20Basic%20Shapes and http://wiki.ros.org/rviz/Tutorials/Markers%3A%20Points%20and%20Lines to create a node in python that draws a mooving point in rviz (you can choose any trajectory: cirlce, line, spiral etc)
+* tutorial for custom messsage is located here http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv
+* first implement publisher and find out if all his messages are published. The most probably first messages will be dropped. Try to find the reason
+* implement a subscriber that dies when it gets the message with some specific data.
 
 hints:
 * to see the content of messages that are coming in topic, you can use    rostopic echo <topic_name> 
