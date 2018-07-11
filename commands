@@ -1,0 +1,10 @@
+git clone https://gitlab.com/osll/Duckietown-Software.git
+cd Duckietown-Software
+make
+cd catkin_ws
+catkin_make
+cd
+ssh-keygen -t rsa
+cat .ssh/id_rsa.pub | ssh ubuntu@duck2.local 'cat >> .ssh/authorized_keys'
+export ROS_MASTER_URI="http://duck2.local:11311"
+To launch bot use ./Duckietown-Software/utils/start_master_apriltags_any_intersection.sh duck2
