@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="turtle1" type="node.py" name="h"> </node>
+	<node pkg="turtle1" type="turtle_e.py" name="e"> </node>
+</launch>

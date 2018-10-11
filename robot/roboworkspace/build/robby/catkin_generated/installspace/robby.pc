@@ -1,0 +1,8 @@
+prefix=/home/summer/robot/roboworkspace/install
+
+Name: robby
+Description: Description of robby
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/summer/robot/roboworkspace/install/lib 
+Requires: 
